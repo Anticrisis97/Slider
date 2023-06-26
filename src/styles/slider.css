@@ -1,19 +1,48 @@
+:root {
+    --sliderHeight: 400px;
+}
+
 .slider {
     background-color: peru;
+    margin-top: 300px;
+    overflow: hidden;
+    width: 100%;
+    min-height: var(--sliderHeight);
 }
-.slider .slider__slides {}
+
+.slider .slider__slides {
+    position: relative;
+}
 
 .slider .slider__slide {
-    background-color: lightcoral;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    min-height: var(--sliderHeight);
 }
+
 .slider .slider__slide:first-child {
-    background-color: lightblue;
+    background-image: url(../images/blackhole.webp);
+    left: 0;
 }
-.slider.slider__slide:nth-child(2) {
-    background-color: lightgreen;
+
+.slider .slider__slide:nth-child(2) {
+    background-image: url(../images/dante.webp);
+    left: 100%;
 }
+
 .slider .slider__slide:last-child {
-    background-color: lightgoldenrodyellow;
+    background-image: url(../images/tesseract.jpg);
+    left: 200%;
+}
+
+
+.slider .slider__box {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 .slider .slider__headline {}
 .slider .slider__lead {}
