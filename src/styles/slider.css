@@ -1,5 +1,6 @@
-.slider {}
-
+.slider {
+    background-color: peru;
+}
 .slider .slider__slides {}
 
 .slider .slider__slide {}
