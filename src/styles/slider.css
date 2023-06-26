@@ -3,7 +3,18 @@
 }
 .slider .slider__slides {}
 
-.slider .slider__slide {}
+.slider .slider__slide {
+    background-color: lightcoral;
+}
+.slider .slider__slide:first-child {
+    background-color: lightblue;
+}
+.slider.slider__slide:nth-child(2) {
+    background-color: lightgreen;
+}
+.slider .slider__slide:last-child {
+    background-color: lightgoldenrodyellow;
+}
 .slider .slider__headline {}
 .slider .slider__lead {}
 .slider .slider__link {}
