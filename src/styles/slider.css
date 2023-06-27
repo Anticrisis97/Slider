@@ -4,8 +4,7 @@
 
 .slider {
     background-color: peru;
-    margin-top: 300px;
-    overflow: hidden;
+    /*overflow: hidden;*/
     width: 100%;
     min-height: var(--sliderHeight);
 }
@@ -19,6 +18,9 @@
     width: 100%;
     top: 0;
     min-height: var(--sliderHeight);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .slider .slider__slide:first-child {
@@ -43,10 +45,22 @@
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-family: "Roboto", sans-serif;
+
 }
-.slider .slider__headline {}
-.slider .slider__lead {}
-.slider .slider__link {}
+.slider .slider__headline {
+    font-weight: 500;
+}
+.slider .slider__lead {
+    font-weight: 300;
+}
+.slider .slider__link {
+    color: inherit;
+    font-weight: 500;
+
+}
 
 .slider .slider__nav {}
 .slider .slider__btn {}
